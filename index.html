@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Book List</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Add Book</h1>
+        <form id="book-form">
+            <div>
+                <label for="title">Title</label>
+                <br>
+                <input type="text" id="title" class="input" placeholder="Enter the title">
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <br>
+                <input type="text" id="author" class="input" placeholder="Enter the name of author here">
+            </div>
+            <div>
+                <label for="isbn">ISBN#</label>
+                <br>
+                <input type="text" id="isbn" class="input" placeholder="Enter ISBN">
+            </div>
+            <input type="submit" name="submit" value="Submit" id="submit" class="submit">
+        </form>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
